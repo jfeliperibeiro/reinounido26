@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70ce7b1125231ff2b57b12b40dba5961 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_70ce7b1125231ff2b57b12b40dba5961" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70ce7b1125231ff2b57b12b40dba5961 = L.map(
+                "map_70ce7b1125231ff2b57b12b40dba5961",
+                {
+                    center: [54.0, -2.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d25254641c6e00bdf610aa5a1215ec99 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+            var marker_b764f13a33a6cc143b4739a8a5369b94 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_c2ff455a7180df8e606494d2823f8ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6002fd8e46f7a45a5e3aea025301885 = $(`<div id="html_c6002fd8e46f7a45a5e3aea025301885" style="width: 100.0%; height: 100.0%;"><b>London (start)</b><br>Days 1–5<br>Museums, Westminster, Tower Bridge. Oyster Card for transport.</div>`)[0];
+            popup_c2ff455a7180df8e606494d2823f8ec2.setContent(html_c6002fd8e46f7a45a5e3aea025301885);
+        
+
+        marker_b764f13a33a6cc143b4739a8a5369b94.bindPopup(popup_c2ff455a7180df8e606494d2823f8ec2)
+        ;
+
+        
+    
+    
+            marker_b764f13a33a6cc143b4739a8a5369b94.bindTooltip(
+                `<div>
+                     London (start)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69737425add2c6ace10adbd3f4fa30ee = L.marker(
+                [51.752, -1.2577],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_1d659a7daee6d1f227422c15d03eaf10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff05cba2623772bd7cc106c226429aab = $(`<div id="html_ff05cba2623772bd7cc106c226429aab" style="width: 100.0%; height: 100.0%;"><b>Oxford</b><br>Days 6–8<br>Colleges, Bodleian Library. Bus from London ~£6–£10.</div>`)[0];
+            popup_1d659a7daee6d1f227422c15d03eaf10.setContent(html_ff05cba2623772bd7cc106c226429aab);
+        
+
+        marker_69737425add2c6ace10adbd3f4fa30ee.bindPopup(popup_1d659a7daee6d1f227422c15d03eaf10)
+        ;
+
+        
+    
+    
+            marker_69737425add2c6ace10adbd3f4fa30ee.bindTooltip(
+                `<div>
+                     Oxford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2a8a945fcd4ace16ff7b8ae065a18c0 = L.marker(
+                [51.3811, -2.359],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_b388da1c868aadf6342cb3e1e02045ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a30be96275a9dde9f526cec723cb8c04 = $(`<div id="html_a30be96275a9dde9f526cec723cb8c04" style="width: 100.0%; height: 100.0%;"><b>Bath</b><br>Days 9–11<br>Georgian architecture, Roman Baths.</div>`)[0];
+            popup_b388da1c868aadf6342cb3e1e02045ed.setContent(html_a30be96275a9dde9f526cec723cb8c04);
+        
+
+        marker_e2a8a945fcd4ace16ff7b8ae065a18c0.bindPopup(popup_b388da1c868aadf6342cb3e1e02045ed)
+        ;
+
+        
+    
+    
+            marker_e2a8a945fcd4ace16ff7b8ae065a18c0.bindTooltip(
+                `<div>
+                     Bath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13d66ab400baf1062fa96204456575d1 = L.marker(
+                [51.1789, -1.8262],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_4b7d14ae28941a8332cd46a67adb31d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72cd84ccdc83f69f24d1116ab23edca = $(`<div id="html_a72cd84ccdc83f69f24d1116ab23edca" style="width: 100.0%; height: 100.0%;"><b>Stonehenge / Salisbury</b><br>Day 12<br>Stonehenge visit. Train to Salisbury + shuttle/tour to Stonehenge.</div>`)[0];
+            popup_4b7d14ae28941a8332cd46a67adb31d2.setContent(html_a72cd84ccdc83f69f24d1116ab23edca);
+        
+
+        marker_13d66ab400baf1062fa96204456575d1.bindPopup(popup_4b7d14ae28941a8332cd46a67adb31d2)
+        ;
+
+        
+    
+    
+            marker_13d66ab400baf1062fa96204456575d1.bindTooltip(
+                `<div>
+                     Stonehenge / Salisbury
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d59ed6490f907c1cacc1f56a11dba0e = L.marker(
+                [51.4545, -2.5879],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_a2f3540837f557b2642f6be46d9860a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba7de071a7f1333bde966d3169d09ab = $(`<div id="html_6ba7de071a7f1333bde966d3169d09ab" style="width: 100.0%; height: 100.0%;"><b>Bristol</b><br>Days 13–14<br>Clifton Suspension Bridge, SS Great Britain.</div>`)[0];
+            popup_a2f3540837f557b2642f6be46d9860a0.setContent(html_6ba7de071a7f1333bde966d3169d09ab);
+        
+
+        marker_0d59ed6490f907c1cacc1f56a11dba0e.bindPopup(popup_a2f3540837f557b2642f6be46d9860a0)
+        ;
+
+        
+    
+    
+            marker_0d59ed6490f907c1cacc1f56a11dba0e.bindTooltip(
+                `<div>
+                     Bristol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ae4f977bbc565cd4fc9d104af795395 = L.marker(
+                [51.4816, -3.1791],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_55a6cb3cbf50ee01d849302045ea75db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e1ac61cf9411de3a757fc6bfe79a540 = $(`<div id="html_5e1ac61cf9411de3a757fc6bfe79a540" style="width: 100.0%; height: 100.0%;"><b>Cardiff</b><br>Days 15–16<br>Cardiff Castle, Cardiff Bay.</div>`)[0];
+            popup_55a6cb3cbf50ee01d849302045ea75db.setContent(html_5e1ac61cf9411de3a757fc6bfe79a540);
+        
+
+        marker_6ae4f977bbc565cd4fc9d104af795395.bindPopup(popup_55a6cb3cbf50ee01d849302045ea75db)
+        ;
+
+        
+    
+    
+            marker_6ae4f977bbc565cd4fc9d104af795395.bindTooltip(
+                `<div>
+                     Cardiff
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be7edfb57ab8d7bcf38508374ba0ec82 = L.marker(
+                [53.4808, -2.2426],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_18a429f4c6fcbc5e4c46c905282d0f3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dff13b9f0581240f2c16ccf8afad7c3b = $(`<div id="html_dff13b9f0581240f2c16ccf8afad7c3b" style="width: 100.0%; height: 100.0%;"><b>Manchester</b><br>Days 17–20<br>John Rylands Library, industrial architecture.</div>`)[0];
+            popup_18a429f4c6fcbc5e4c46c905282d0f3f.setContent(html_dff13b9f0581240f2c16ccf8afad7c3b);
+        
+
+        marker_be7edfb57ab8d7bcf38508374ba0ec82.bindPopup(popup_18a429f4c6fcbc5e4c46c905282d0f3f)
+        ;
+
+        
+    
+    
+            marker_be7edfb57ab8d7bcf38508374ba0ec82.bindTooltip(
+                `<div>
+                     Manchester
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe48de03e639ee8bea209f842c8bde19 = L.marker(
+                [53.959, -1.0815],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_7c33a5f5257e3dafe0f8a8c685fa65ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10f6baf26e616cc484cc41a4f4fb25e4 = $(`<div id="html_10f6baf26e616cc484cc41a4f4fb25e4" style="width: 100.0%; height: 100.0%;"><b>York</b><br>Days 21–23<br>York Minster, medieval walls.</div>`)[0];
+            popup_7c33a5f5257e3dafe0f8a8c685fa65ae.setContent(html_10f6baf26e616cc484cc41a4f4fb25e4);
+        
+
+        marker_fe48de03e639ee8bea209f842c8bde19.bindPopup(popup_7c33a5f5257e3dafe0f8a8c685fa65ae)
+        ;
+
+        
+    
+    
+            marker_fe48de03e639ee8bea209f842c8bde19.bindTooltip(
+                `<div>
+                     York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de965493995e0aaacffafbb5eece41b5 = L.marker(
+                [55.9533, -3.1883],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_c7213fc8fea60aa59bc37f0af3f6117f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a99a0b8eb259ef9e14faa0556eb2a71 = $(`<div id="html_4a99a0b8eb259ef9e14faa0556eb2a71" style="width: 100.0%; height: 100.0%;"><b>Edinburgh</b><br>Days 24–26<br>Royal Mile, Edinburgh Castle.</div>`)[0];
+            popup_c7213fc8fea60aa59bc37f0af3f6117f.setContent(html_4a99a0b8eb259ef9e14faa0556eb2a71);
+        
+
+        marker_de965493995e0aaacffafbb5eece41b5.bindPopup(popup_c7213fc8fea60aa59bc37f0af3f6117f)
+        ;
+
+        
+    
+    
+            marker_de965493995e0aaacffafbb5eece41b5.bindTooltip(
+                `<div>
+                     Edinburgh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2a1ba633fca51baa569c55f512549f9 = L.marker(
+                [55.8642, -4.2518],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_12b432484850d47d4ff3eece2f693f56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0b86915a2847fe23fbed002e558aef9 = $(`<div id="html_d0b86915a2847fe23fbed002e558aef9" style="width: 100.0%; height: 100.0%;"><b>Glasgow</b><br>Days 27–28<br>Kelvingrove, Mackintosh architecture.</div>`)[0];
+            popup_12b432484850d47d4ff3eece2f693f56.setContent(html_d0b86915a2847fe23fbed002e558aef9);
+        
+
+        marker_e2a1ba633fca51baa569c55f512549f9.bindPopup(popup_12b432484850d47d4ff3eece2f693f56)
+        ;
+
+        
+    
+    
+            marker_e2a1ba633fca51baa569c55f512549f9.bindTooltip(
+                `<div>
+                     Glasgow
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0de1b72cef2818db00c807a39c2b5cea = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+    
+        var popup_dabbd154198438a14170334debcc9027 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b15939dbd504a82b8e3dda93c8ac435a = $(`<div id="html_b15939dbd504a82b8e3dda93c8ac435a" style="width: 100.0%; height: 100.0%;"><b>London (end)</b><br>Days 29–30<br>Return to London for final visits and departure.</div>`)[0];
+            popup_dabbd154198438a14170334debcc9027.setContent(html_b15939dbd504a82b8e3dda93c8ac435a);
+        
+
+        marker_0de1b72cef2818db00c807a39c2b5cea.bindPopup(popup_dabbd154198438a14170334debcc9027)
+        ;
+
+        
+    
+    
+            marker_0de1b72cef2818db00c807a39c2b5cea.bindTooltip(
+                `<div>
+                     London (end)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_6c5a8e33e559dd63053260ec4770dd66 = L.polyline.antPath(
+              [[51.5074, -0.1278], [51.752, -1.2577], [51.3811, -2.359], [51.1789, -1.8262], [51.4545, -2.5879], [51.4816, -3.1791], [53.4808, -2.2426], [53.959, -1.0815], [55.9533, -3.1883], [55.8642, -4.2518], [51.5074, -0.1278]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_70ce7b1125231ff2b57b12b40dba5961);
+        
+</script>
+</html>
