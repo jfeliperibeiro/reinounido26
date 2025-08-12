@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo Detalhada - Roteiro Reino Unido (Abril 2026)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 850px; /* Aumentado para acomodar mais conteúdo */
+            width: 100%;
+            border-right: 5px solid #dc3545; /* Linha vermelha lateral */
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.4em;
+        }
+
+        h2 {
+            color: #555;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.3em;
+            font-weight: normal;
+        }
+
+        .city-forecast {
+            background-color: #e8f0fe; /* Fundo mais claro para destacar cada bloco de cidade */
+            border: 1px solid #a8c8ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .city-forecast h3 {
+            color: #0056b3;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+            border-bottom: 2px solid #cceeff;
+            padding-bottom: 10px;
+        }
+
+        .daily-entry {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #d0e0ff;
+            flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+        }
+
+        .daily-entry:last-child {
+            border-bottom: none;
+        }
+
+        .daily-entry .day-info {
+            flex-basis: 70%; /* Ocupa mais espaço */
+            display: flex;
+            align-items: center;
+        }
+
+        .daily-entry .day-info strong {
+            color: #007bff;
+            font-size: 1.15em;
+            min-width: 150px; /* Garante que a data tenha espaço suficiente */
+        }
+
+        .daily-entry .condition-text {
+            margin-left: 15px;
+            font-size: 1em;
+            color: #444;
+        }
+
+        .daily-entry .temp {
+            flex-basis: 25%; /* Ocupa menos espaço */
+            text-align: right;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.15em;
+        }
+
+        .weather-icon {
+            font-size: 1.8em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+            .city-forecast h3 {
+                font-size: 1.6em;
+            }
+            .daily-entry {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 10px 0;
+            }
+            .daily-entry .day-info {
+                flex-basis: 100%;
+                margin-bottom: 5px;
+            }
+            .daily-entry .temp {
+                flex-basis: 100%;
+                text-align: left;
+            }
+            .daily-entry .day-info strong {
+                min-width: unset; /* Remove min-width on small screens */
+            }
+            .daily-entry .condition-text {
+                margin-left: 0;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão do Tempo Detalhada</h1>
+        <h2>Roteiro de 30 Dias pelo Reino Unido - Abril de 2026</h2>
+
+        <!-- LONDON (START) - Days 1-5 -->
+        <div class="city-forecast">
+            <h3>Londres (Início) - 01 a 05 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>01 de Abril (Quarta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Parcialmente Nublado</span>
+                </div>
+                <p class="temp">Máx: 14°C / Mín: 8°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>02 de Abril (Quinta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌧️</span> Chuva Leve Intermitente</span>
+                </div>
+                <p class="temp">Máx: 12°C / Mín: 7°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>03 de Abril (Sexta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌦️</span> Encoberto com Chuviscos</span>
+                </div>
+                <p class="temp">Máx: 13°C / Mín: 7°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>04 de Abril (Sábado)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Ensolarado com Nuvens Esparsas</span>
+                </div>
+                <p class="temp">Máx: 16°C / Mín: 9°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>05 de Abril (Domingo)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Nublado, com Períodos de Abertura</span>
+                </div>
+                <p class="temp">Máx: 15°C / Mín: 8°C</p>
+            </div>
+        </div>
+
+        <!-- OXFORD - Days 6-8 -->
+        <div class="city-forecast">
+            <h3>Oxford - 06 a 08 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>06 de Abril (Segunda-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Céu Nublado</span>
+                </div>
+                <p class="temp">Máx: 14°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>07 de Abril (Terça-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌦️</span> Pancadas de Chuva</span>
+                </div>
+                <p class="temp">Máx: 11°C / Mín: 5°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>08 de Abril (Quarta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Sol com Vento Frio</span>
+                </div>
+                <p class="temp">Máx: 13°C / Mín: 4°C</p>
+            </div>
+        </div>
+
+        <!-- BATH - Days 9-11 -->
+        <div class="city-forecast">
+            <h3>Bath - 09 a 11 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>09 de Abril (Quinta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Ensolarado</span>
+                </div>
+                <p class="temp">Máx: 17°C / Mín: 9°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>10 de Abril (Sexta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Parcialmente Nublado</span>
+                </div>
+                <p class="temp">Máx: 15°C / Mín: 8°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>11 de Abril (Sábado)</strong>
+                    <span class="condition-text"><span class="weather-icon">☔</span> Chuva Moderada</span>
+                </div>
+                <p class="temp">Máx: 12°C / Mín: 7°C</p>
+            </div>
+        </div>
+
+        <!-- STONEHENGE / SALISBURY - Day 12 -->
+        <div class="city-forecast">
+            <h3>Stonehenge / Salisbury - 12 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>12 de Abril (Domingo)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Nublado e Vento Forte</span>
+                </div>
+                <p class="temp">Máx: 10°C / Mín: 5°C</p>
+            </div>
+        </div>
+
+        <!-- BRISTOL - Days 13-14 -->
+        <div class="city-forecast">
+            <h3>Bristol - 13 a 14 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>13 de Abril (Segunda-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌧️</span> Chuva Forte</span>
+                </div>
+                <p class="temp">Máx: 11°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>14 de Abril (Terça-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌦️</span> Pancadas de Chuva Isoladas</span>
+                </div>
+                <p class="temp">Máx: 13°C / Mín: 7°C</p>
+            </div>
+        </div>
+
+        <!-- CARDIFF - Days 15-16 -->
+        <div class="city-forecast">
+            <h3>Cardiff - 15 a 16 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>15 de Abril (Quarta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Céu Encoberto</span>
+                </div>
+                <p class="temp">Máx: 12°C / Mín: 7°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>16 de Abril (Quinta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Sol com Nuvens</span>
+                </div>
+                <p class="temp">Máx: 15°C / Mín: 8°C</p>
+            </div>
+        </div>
+
+        <!-- MANCHESTER - Days 17-20 -->
+        <div class="city-forecast">
+            <h3>Manchester - 17 a 20 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>17 de Abril (Sexta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌧️</span> Chuva Persistente</span>
+                </div>
+                <p class="temp">Máx: 10°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>18 de Abril (Sábado)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Nublado e Frio</span>
+                </div>
+                <p class="temp">Máx: 9°C / Mín: 5°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>19 de Abril (Domingo)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌦️</span> Pancadas de Chuva</span>
+                </div>
+                <p class="temp">Máx: 11°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>20 de Abril (Segunda-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Sol entre Nuvens</span>
+                </div>
+                <p class="temp">Máx: 14°C / Mín: 7°C</p>
+            </div>
+        </div>
+
+        <!-- YORK - Days 21-23 -->
+        <div class="city-forecast">
+            <h3>York - 21 a 23 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>21 de Abril (Terça-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Nublado</span>
+                </div>
+                <p class="temp">Máx: 13°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>22 de Abril (Quarta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Ensolarado</span>
+                </div>
+                <p class="temp">Máx: 16°C / Mín: 8°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>23 de Abril (Quinta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌦️</span> Chuva Leve</span>
+                </div>
+                <p class="temp">Máx: 12°C / Mín: 7°C</p>
+            </div>
+        </div>
+
+        <!-- EDINBURGH - Days 24-26 -->
+        <div class="city-forecast">
+            <h3>Edimburgo - 24 a 26 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>24 de Abril (Sexta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌬️☁️</span> Vento Forte e Nublado</span>
+                </div>
+                <p class="temp">Máx: 9°C / Mín: 4°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>25 de Abril (Sábado)</strong>
+                    <span class="condition-text"><span class="weather-icon">🌧️</span> Chuva Fria</span>
+                </div>
+                <p class="temp">Máx: 8°C / Mín: 3°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>26 de Abril (Domingo)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Céu Encoberto</span>
+                </div>
+                <p class="temp">Máx: 10°C / Mín: 5°C</p>
+            </div>
+        </div>
+
+        <!-- GLASGOW - Days 27-28 -->
+        <div class="city-forecast">
+            <h3>Glasgow - 27 a 28 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>27 de Abril (Segunda-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☔</span> Chuva Constante</span>
+                </div>
+                <p class="temp">Máx: 9°C / Mín: 6°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>28 de Abril (Terça-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Nublado e Úmido</span>
+                </div>
+                <p class="temp">Máx: 10°C / Mín: 6°C</p>
+            </div>
+        </div>
+
+        <!-- LONDON (END) - Days 29-30 -->
+        <div class="city-forecast">
+            <h3>Londres (Fim) - 29 a 30 de Abril</h3>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>29 de Abril (Quarta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☀️</span> Sol entre Nuvens</span>
+                </div>
+                <p class="temp">Máx: 15°C / Mín: 8°C</p>
+            </div>
+            <div class="daily-entry">
+                <div class="day-info">
+                    <strong>30 de Abril (Quinta-feira)</strong>
+                    <span class="condition-text"><span class="weather-icon">☁️</span> Parcialmente Nublado</span>
+                </div>
+                <p class="temp">Máx: 14°C / Mín: 7°C</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
